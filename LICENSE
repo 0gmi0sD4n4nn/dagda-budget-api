@@ -1,21 +1,38 @@
-MIT License
-
 Copyright (c) 2026 0gmi0sD4n4nn
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted to any person obtaining a copy of this software
+and associated documentation files (the "Software"), to use, copy, modify,
+and distribute the Software for personal, educational, or internal use,
+subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Non-Commercial Use Only  
+   The Software may NOT be used, in whole or in part, for any commercial
+   purpose without explicit prior written permission from the copyright holder.
+   Commercial purposes include, but are not limited to, selling, licensing,
+   monetizing, or offering the Software as part of a paid product or service.
+
+2. No Hosting / No Software-as-a-Service (SaaS)  
+   The Software may NOT be used to provide a hosted service, cloud service,
+   managed service, or Software-as-a-Service (SaaS), whether free or paid,
+   by any third party without explicit prior written permission from the
+   copyright holder.
+
+3. Redistribution  
+   Redistribution of the Software or derivative works must retain this license
+   and all copyright notices.
+
+4. Ownership  
+   This license does not grant any rights to use the name, trademarks, or
+   branding of the copyright holder.
+
+---
+
+DISCLAIMER OF WARRANTY
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
