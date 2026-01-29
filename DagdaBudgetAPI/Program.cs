@@ -1,13 +1,19 @@
-var builder = WebApplication.CreateBuilder(args);  
+using DagdaBudgetAPI.DataBaseAccess;
+using DagdaBudgetAPI.Queries;
+using Microsoft.EntityFrameworkCore;
 
-// Add GraphQL services  
-builder.Services  
-    .AddGraphQLServer()  
-    .AddQueryType<Query>();  
+var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();  
+builder.Services.AddPooledDbContextFactory<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 
-// Map GraphQL endpoint  
-app.MapGraphQL();  
+// Add GraphQL services
+builder.Services.AddGraphQLServer().AddQueryType<Query>();
 
-app.Run();  
+var app = builder.Build();
+
+// Map GraphQL endpoint
+app.MapGraphQL();
+
+app.Run();

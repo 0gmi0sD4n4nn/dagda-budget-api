@@ -1,8 +1,20 @@
+using DagdaBudgetAPI.DataBaseAccess;
+using DagdaBudgetAPI.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace DagdaBudgetAPI.Queries;
+
 public class Query
-{  
-    public List<User> GetUser() => new()  
-    {  
-        new User { Id = 1, Username = "0gmi0s", Password = "Pa$$w0rd", CreateAt = new DateTime(2026,1,19,12,0,0) },  
-        new User { Id = 2, Username = "0n1zuka", Password = "Str0ngPa$$w0rd", CreateAt = new DateTime(2026,1,19,11,0,0) }  
-    };  
-} 
+{
+    private readonly ApplicationDbContext applicationDbContext;
+
+    public Query(ApplicationDbContext applicationDbContext)
+    {
+        this.applicationDbContext = applicationDbContext;
+    }
+
+    public IQueryable<User> GetUsers([Service] IDbContextFactory<ApplicationDbContext> factory)
+    {
+        return factory.CreateDbContext().Users;
+    }
+}
